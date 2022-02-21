@@ -178,6 +178,9 @@ ul, ol {
     .d-md-block {
         display: block!important;
     }
+    .d-md-none {
+        display: none!important;
+    }
 }
 
 @media (min-width: 1024px) {
