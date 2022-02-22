@@ -24,6 +24,11 @@
     width: 100%;
 }
 
+.primary .featured--horizontal .featured__head {
+    display: flex;
+    margin-bottom: 25px;
+}
+
 .featured__head a {
     display: flex;
     flex-flow: wrap;
@@ -43,11 +48,22 @@
     border-radius: 3px;
 }
 
+.primary .featured--horizontal .featured__head .picture {
+    width: 175px;
+    height: 175px;
+}
+
 .featured__head a .picture img {
     width: 100%;
     object-fit: cover;
     transform: scale(1);
     transition: .5s;
+}
+
+.featured--horizontal .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .featured__head a:hover .picture img {
@@ -75,6 +91,11 @@
 
 .section--home .featured .picture+.mark .mark__label .tag{
     border-top-left-radius: 0;
+}
+
+.primary .featured--horizontal .mark {
+    width: 60%;
+    padding-left: 16px;
 }
 
 .tag:not(.tag--sponsor) {
@@ -120,6 +141,10 @@
     background: #7ed321;
 }
 
+.tag--filmes .tag__label, .tag--twitch .tag__label {
+    background: #f50;
+}
+
 .tag__label {
     align-items: center;
     display: flex;
@@ -135,6 +160,10 @@
     font-weight: 800;
 }
 
+.primary .featured--horizontal .mark__title {
+    margin: 10px 0 0;
+}
+
 .featured__head a .mark__title {
     font-weight: 600;
     margin: 20px 0;
@@ -148,6 +177,11 @@
     font-size: 42px;
     font-weight: 800;
     letter-spacing: -1.4px;
+}
+
+.primary .featured--horizontal .mark__title h2 {
+    font-size: 30px;
+    letter-spacing: -.8px;
 }
 
 .featured__head a .mark__title h2 {
@@ -250,17 +284,19 @@ main .main h3 {
     .primary .featured--main .mark__title h2 {
         font-size: 32px;
     }
+    .primary .featured--horizontal .featured__head .picture {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 @media (min-width: 1024px) {
     .primary::before {
         left: 25px;
     }
-
     .primary::after {
         right: 25px;
     }
-
     .primary::after, .primary::before {
         content: '';
         display: flex;
@@ -268,6 +304,9 @@ main .main h3 {
         height: 100%;
         background-color: #e6e6e6;
         position: absolute;
+    }
+    .primary .featured--horizontal .featured__head a {
+        flex-flow: nowrap;
     }
 }
 
@@ -297,7 +336,25 @@ main .main h3 {
         font-size: .32em;
         line-height: 1.6;
     }
+    .primary .featured--main .mark__title h2 {
+        font-size: 30px;
+    }
     .primary .featured--main .subtitle h3 {
         font-size: 18px;
+    }
+    .primary .featured--horizontal .featured__head .picture {
+        margin-bottom: -15px;
+        width: 100%;
+        height: 50vw;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+    .primary .featured--horizontal .featured__head .picture img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        max-height: none;
+        object-fit: cover;
+        object-position: center;
     }
 }
