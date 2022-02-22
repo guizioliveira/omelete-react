@@ -51,12 +51,16 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #ffc107;
+    background-color: #e0a904;
     top: 0;
     left: 0;
     transform: scale(0);
     transition: .5s;
     border-radius: 100%;
+}
+
+.web-stories__list .storie--click .storie__image:hover::after {
+    transform:scale(1);
 }
 
 .web-stories__list .storie p {
@@ -75,6 +79,10 @@
     border-radius: 100%;
     border: 5px solid #ffc107;
     transition: .5s;
+}
+
+.web-stories__list .storie--more .storie__image:hover {
+    border-color:#e0a904;
 }
 
 .web-stories__list .storie--more .storie__image i {
