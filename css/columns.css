@@ -1,25 +1,3 @@
-.container {
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto;
-
-}
-
-.container-fluid {
-    width:100%;
-    padding-right:15px;
-    padding-left:15px;
-    margin-right:auto;
-    margin-left:auto;
-}
-.row {
-    display:flex;
-    flex-wrap:wrap;
-    margin-right:-15px;
-    margin-left:-15px;
-}
 .no-gutters {
     margin-right:0;
     margin-left:0;
@@ -450,10 +428,6 @@
 }
 
 @media (min-width:768px) {
-    .container {
-        max-width:768px;
-    }
-
     .col-md {
         flex-basis:0;
         flex-grow:1;
@@ -664,10 +638,6 @@
 }
 
 @media (min-width:1024px) {
-    .container {
-        max-width:1000px;
-    }
-
     .col-lg {
         flex-basis:0;
         flex-grow:1;
@@ -878,10 +848,6 @@
 }
 
 @media (min-width:1280px) {
-    .container {
-        max-width:1220px;
-    }
-    
     .col-xl {
         flex-basis:0;
         flex-grow:1;
