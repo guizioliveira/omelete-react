@@ -22,10 +22,15 @@
             
         </main>
         <script>
-            $(function(){
-                $(".header").load("components/header.html");
-                $(".page__home").load("components/web-stories.html");
-            })
+            $.get("components/header.html", function(data) {
+                $(".header").append(data); 
+            });
+            $.get("components/web-stories.html", function(data) {
+                $(".page__home").append(data);
+            });
+            $.get("components/features.html", function(data) {
+                $(".page__home").append(data);
+            });
         </script>
     </body>
 </html>
