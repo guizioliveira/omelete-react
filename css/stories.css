@@ -105,6 +105,9 @@
     .web-stories {
         border-bottom: none;
     }
+    .web-stories__list {
+        padding-bottom: 15px;
+    }
     .web-stories__list .storie {
         max-width: 85px;
         margin-right: 8px;
