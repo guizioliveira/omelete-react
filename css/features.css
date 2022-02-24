@@ -1,0 +1,436 @@
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+
+.primary .margin {
+    padding: 0 50px;
+}
+
+.featured {
+    padding: 0;
+    margin: 40px 0;
+    display: flex;
+    flex-flow: wrap;
+    text-rendering: optimizeSpeed;
+}
+
+.featured__head {
+    width: 100%;
+}
+
+.primary .featured--horizontal .featured__head {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.featured__head a {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.primary .featured--main .picture {
+    width: 100%;
+    height: 360px;
+}
+
+.featured__head a .picture--top {
+    margin-bottom: -19px;
+}
+
+.featured__head a .picture {
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.primary .featured--horizontal .featured__head .picture {
+    width: 175px;
+    height: 175px;
+}
+
+.featured__head a .picture img {
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.featured--horizontal .picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured__head a:hover .picture img {
+    transform: scale(1.2);
+}
+
+.section--home .featured .mark {
+    width: 100%;
+}
+
+.primary .featured--main .mark__label {
+    font-size: 38px;
+}
+
+.section--home .featured .mark__label {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.featured__head a .mark__label {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.section--home .featured .picture+.mark .mark__label .tag{
+    border-top-left-radius: 0;
+}
+
+.primary .featured--horizontal .mark {
+    width: 60%;
+    padding-left: 16px;
+}
+
+.tag:not(.tag--sponsor) {
+    margin-bottom: 5px;
+}
+
+.tag {
+    background-color: #ffbf00;
+    font-family: uni-book,Arial, sans-serif;
+    font-style: italic;
+    font-size: 1em;
+    position: relative;
+    border-radius: 3px;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: stretch;
+    text-transform: uppercase;
+}
+
+.tag p {
+    font-size: .4em;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.78em;
+    letter-spacing: 1.9px;
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    padding: 0.38em-1.1em;
+    text-rendering: geometricPrecision;
+}
+
+.featured__head a .mark__label p, .featured__head a .mark__label span {
+    font-weight: 600;
+}
+
+.featured__head a .mark__label p {
+    line-height: 1.42em;
+    padding: 4px 10px;
+}
+
+.tag--series-tv .tag__label {
+    background: #7ed321;
+}
+
+.tag--filmes .tag__label, .tag--twitch .tag__label {
+    background: #f50;
+}
+
+.tag__label {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    min-width: 10px;
+}
+
+.primary .featured .mark__title {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.primary .featured--horizontal .mark__title {
+    margin: 10px 0 0;
+}
+
+.featured__head a .mark__title {
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.featured__head a:hover .mark__title {
+    color: #ffbf00;
+}
+
+.primary .featured--main .mark__title h2 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1.4px;
+}
+
+.primary .featured--horizontal .mark__title h2 {
+    font-size: 30px;
+    letter-spacing: -.8px;
+}
+
+.featured__head a .mark__title h2 {
+    line-height: 1.05;
+    letter-spacing: -1px;
+}
+
+main .main h2 {
+    font-size: 24px;
+}
+
+main .main h3 {
+    font-size: 28px;
+}
+
+.featured__subtitle {
+    width: 100%;
+    font-family: uni-book,Arial,sans-serif;
+    font-size: 24px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.primary .featured--main .subtitle h3 {
+    font-size: 24px;
+}
+
+.featured .links {
+    width: 100%;
+    margin-bottom: 25px;
+    flex-flow: wrap;
+}
+
+.featured .links__list {
+    display: flex;
+}
+
+.links__list--column {
+    flex-direction: column;
+}
+
+.links__list--column .links__list__item:first-child {
+    margin-top: 0;
+}
+
+.links__list--column .links__list__item:last-child {
+    margin-bottom: 0;
+}
+
+.links__list__item:first-child {
+    margin-left: 0;
+}
+
+.links__list--dotted .links__list__item {
+    display: inline;
+    padding-left: 13px;
+    position: relative;
+}
+
+.links__list--column .links__list__item {
+    margin: 5px 0;
+}
+
+.links__list--dotted .links__list__item:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    font-size: 1em;
+    top: calc(0.8em - 6px);
+    background-color: #ffbf00;
+    border: 1px solid #e2a100;
+}
+
+.featured .links__list .link a, .featured .links__list__item a {
+    display: flex;
+    color: #000;
+    font-style: normal;
+}
+
+.featured .links a {
+    font-family: uni-book,Arial,sans-serif;
+    line-height: 1.33;
+    letter-spacing: .3px;
+    font-size: 15px;
+}
+
+.featured .links a:hover {
+    color: #ffbf00;
+}
+
+.secondary .featured .picture--top, .tertiary .featured .picture--top {
+    margin-bottom: -15px
+}
+
+.secondary .featured .picture, .tertiary .featured .picture {
+    width: 100%;
+    height: 206px;
+}
+
+.secondary .featured .mark__title, .tertiary .featured .mark__title {
+    margin: 10px 0 15px;
+}
+
+.secondary .featured .mark__title h2, .tertiary .featured .mark__title h2 {
+    font-size: 24px;
+    letter-spacing: -.3px;
+}
+
+.secondary .featured--main .mark__title h2, .tertiary .featured--main .mark__title h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+}
+
+.secondary .featured .links__list, .tertiary .featured .links__list {
+    flex-flow: column;
+    width: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .section--home .section__wrapper .primary {
+        order: -1;
+    }
+
+    .primary .featured--main .picture {
+        height: auto;
+    }
+
+    .secondary, .tertiary {
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 224px;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+    .primary .featured--main .picture {
+        height: 287px;
+    }
+    .primary .featured .mark__title {
+        font-size: 26px;
+    }
+    .primary .featured--main .mark__title h2 {
+        font-size: 32px;
+    }
+    .primary .featured--horizontal .featured__head .picture {
+        width: 140px;
+        height: 140px;
+    }
+
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 167px;
+    }
+
+    .secondary .featured--main .mark__title, .tertiary .featured--main .mark__title {
+        font-size: 26px;
+        line-height: 1;
+        letter-spacing: -.6px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .primary::before {
+        left: 25px;
+    }
+    .primary::after {
+        right: 25px;
+    }
+    .primary::after, .primary::before {
+        content: '';
+        display: flex;
+        width: 1px;
+        height: 100%;
+        background-color: #e6e6e6;
+        position: absolute;
+    }
+    .primary .featured--horizontal .featured__head a {
+        flex-flow: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .featured .links__list .link a, .featured .links__list__item a {
+        align-items: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .primary .col {
+        padding: 0;
+    }
+    .section--home .featured {
+        border-bottom: 1px solid #e6e6e6;
+        max-width: none;
+    }
+    .section--home .featured--main {
+        margin-top: -2px;
+    }
+    .primary .featured--main .picture {
+        width: calc(100% + 30px);
+        height: 50vw;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .primary .featured--main .mark__label .tag {
+        border-top-left-radius: 3px!important;
+    }
+    .primary .featured--main .mark__label .tag p {
+        font-size: .32em;
+        line-height: 1.6;
+    }
+    .primary .featured--main .mark__title h2 {
+        font-size: 30px;
+    }
+    .primary .featured--main .subtitle h3 {
+        font-size: 18px;
+    }
+    .primary .featured--horizontal .featured__head .picture {
+        margin-bottom: -15px;
+        width: 100%;
+        height: 50vw;
+        overflow: hidden;
+        border-radius: 3px;
+    }
+    .primary .featured--horizontal .featured__head .picture img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        max-height: none;
+        object-fit: cover;
+        object-position: center;
+    }
+    .secondary .featured--main {
+        margin: 40px 0 20px;
+        border-bottom: 0;
+    }
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 50vw;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .secondary {
+        order: 2;
+    }
+}
