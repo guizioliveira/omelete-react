@@ -40,7 +40,7 @@
 }
 
 .featured__head a .picture--top {
-    margin-bottom: -19px;
+    margin-bottom: -17px;
 }
 
 .featured__head a .picture {
@@ -70,7 +70,7 @@
     transform: scale(1.2);
 }
 
-.seaction--home .featured .mark {
+.section--home .featured .mark {
     width: 100%;
 }
 
@@ -150,7 +150,7 @@
     display: flex;
     color: #fff;
     text-transform: uppercase;
-    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     min-width: 10px;
 }
@@ -209,6 +209,12 @@ main .main h3 {
     font-size: 24px;
 }
 
+.featured .links {
+    width: 100%;
+    margin-bottom: 25px;
+    flex-flow: wrap;
+}
+
 .featured .links__list {
     display: flex;
 }
@@ -264,6 +270,30 @@ main .main h3 {
     color: #ffbf00;
 }
 
+.secondary .featured .picture--top, .tertiary .featured .picture--top {
+    margin-bottom: -15px
+}
+
+.secondary .featured .picture, .tertiary .featured .picture {
+    width: 100%;
+    height: 206px;
+}
+
+.secondary .featured .mark__title, .tertiary .featured .mark__title {
+    margin: 10px 0 15px;
+}
+
+.secondary .featured--main .mark__title h2, .tertiary .featured--main .mark__title h2 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -.8px;
+}
+
+.secondary .featured .links__list, .tertiary .featured .links__list {
+    flex-flow: column;
+    width: 100%;
+}
+
 @media (min-width: 768px) and (max-width: 1023.98px) {
     .section--home .section__wrapper .primary {
         order: -1;
@@ -272,6 +302,16 @@ main .main h3 {
     .primary .featured--main .picture {
         height: auto;
     }
+
+    .secondary, .tertiary {
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 224px;
+    }
+
 }
 
 @media (min-width: 1024px) and (max-width: 1279.98px) {
@@ -287,6 +327,16 @@ main .main h3 {
     .primary .featured--horizontal .featured__head .picture {
         width: 140px;
         height: 140px;
+    }
+
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 167px;
+    }
+
+    .secondary .featured--main .mark__title, .tertiary .featured--main .mark__title {
+        font-size: 26px;
+        line-height: 1;
+        letter-spacing: -.6px;
     }
 }
 
@@ -319,6 +369,10 @@ main .main h3 {
 @media (max-width: 767.98px) {
     .primary .col {
         padding: 0;
+    }
+    .section--home .featured {
+        border-bottom: 1px solid #e6e6e6;
+        max-width: none;
     }
     .section--home .featured--main {
         margin-top: -2px;
@@ -356,5 +410,18 @@ main .main h3 {
         max-height: none;
         object-fit: cover;
         object-position: center;
+    }
+    .secondary .featured--main {
+        margin: 40px 0 20px;
+        border-bottom: 0;
+    }
+    .secondary .featured .picture, .tertiary .featured .picture {
+        height: 50vw;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .secondary {
+        order: 2;
     }
 }
