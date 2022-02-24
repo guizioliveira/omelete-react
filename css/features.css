@@ -40,7 +40,7 @@
 }
 
 .featured__head a .picture--top {
-    margin-bottom: -17px;
+    margin-bottom: -19px;
 }
 
 .featured__head a .picture {
@@ -227,6 +227,10 @@ main .main h3 {
     margin-top: 0;
 }
 
+.links__list--column .links__list__item:last-child {
+    margin-bottom: 0;
+}
+
 .links__list__item:first-child {
     margin-left: 0;
 }
@@ -283,15 +287,15 @@ main .main h3 {
     margin: 10px 0 15px;
 }
 
+.secondary .featured .mark__title h2, .tertiary .featured .mark__title h2 {
+    font-size: 24px;
+    letter-spacing: -.3px;
+}
+
 .secondary .featured--main .mark__title h2, .tertiary .featured--main .mark__title h2 {
     font-size: 30px;
     font-weight: 800;
     letter-spacing: -.8px;
-}
-
-.secondary .featured .mark__title h2, .tertiary .featured .mark__title h2 {
-    font-size: 24px;
-    letter-spacing: -.3px;
 }
 
 .secondary .featured .links__list, .tertiary .featured .links__list {
