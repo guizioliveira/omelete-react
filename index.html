@@ -21,17 +21,19 @@
     <body>
         <header class="header"></header>
         <main class="page page__home">
-            
+            <div class="main">
+
+            </div>
         </main>
         <script>
             $.get("components/header.html", function(data) {
                 $(".header").append(data); 
             });
             $.get("components/web-stories.html", function(data) {
-                $(".page__home").append(data);
+                $(".main").append(data);
             });
             $.get("components/features.html", function(data) {
-                $(".page__home").append(data);
+                $(".main").append(data);
             });
         </script>
     </body>
