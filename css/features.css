@@ -289,6 +289,11 @@ main .main h3 {
     letter-spacing: -.8px;
 }
 
+.secondary .featured .mark__title h2, .tertiary .featured .mark__title h2 {
+    font-size: 24px;
+    letter-spacing: -.3px;
+}
+
 .secondary .featured .links__list, .tertiary .featured .links__list {
     flex-flow: column;
     width: 100%;
