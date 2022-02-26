@@ -3,14 +3,6 @@
         <title>Home | Omelete</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/columns.css">
-        <link rel="stylesheet" href="css/flex.css">
-        <link rel="stylesheet" href="css/aligns.css">
-        <link rel="stylesheet" href="css/stories.css">
-        <link rel="stylesheet" href="css/features.css">
         <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.png">
         <script 
             src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -25,16 +17,27 @@
 
             </div>
         </main>
-        <script>
-            $.get("components/header.html", function(data) {
-                $(".header").append(data); 
-            });
-            $.get("components/web-stories.html", function(data) {
-                $(".main").append(data);
-            });
-            $.get("components/features.html", function(data) {
-                $(".main").append(data);
-            });
+        <script type="module">
+            import { doLoad, addCss } from "./js/importers.js";
+            
+            addCss([
+                "fonts", 
+                "style", 
+                "header", 
+                "columns", 
+                "flex", 
+                "aligns", 
+                "stories", 
+                "features", 
+                "reviews"
+            ]);
+
+            doLoad("header", ["/components/header.html"]);
+            doLoad(".main", [
+                "/components/web-stories.html", 
+                "/components/features.html", 
+                "/components/reviews.html"
+            ]);
         </script>
     </body>
 </html>
