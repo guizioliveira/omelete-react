@@ -258,3 +258,13 @@
         </div>
   </section>  
 </section>
+
+<script type="module">
+  import { doLoad, addCss } from "./js/importers.js";
+  
+  addCss([
+      "reviews"
+  ]);
+
+  doLoad("#features .container", ["/components/reviews.html"]);
+</script>
