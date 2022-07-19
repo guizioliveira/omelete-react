@@ -1,5 +1,13 @@
 function App() {
-  return <div>Hello World</div>;
+  return (
+    <>
+      {/* <Header/> */}
+      {/* <Stories/> */}
+      {/* <Highlights/> */}
+      {/* <LastCritics/> */}
+      {/* <News/> */}
+    </>
+  );
 }
 
 export default App;
