@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "uni";
+  src: url("./src/fonts/UniNeueLight.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("./src/fonts/UniNeueLight-Italic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("../src/fonts/UniNeueRegular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("./src/fonts/UniNeueRegular-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("./src/fonts/UniNeueBold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni";
+  src: url("./src/fonts/UniNeueHeavy.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni-book";
+  src: url("./src/fonts/UniNeueBook.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "uni-book";
+  src: url("/./src/fonts/UniNeueBook-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
