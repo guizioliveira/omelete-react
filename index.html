@@ -1,41 +1,13 @@
-<html>
-    <head>
-        <title>Home | Omelete</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.png">
-        <script 
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous">
-        </script>
-    </head>
-    <body>
-        <header class="header"></header>
-        <main class="page page--home">
-            <div class="main">
-
-            </div>
-        </main>
-        <script type="module">
-            import { doLoad, addCss } from "./js/importers.js";
-            
-            addCss([
-                "fonts", 
-                "style", 
-                "header", 
-                "columns", 
-                "flex", 
-                "aligns", 
-                "stories", 
-                "features"
-            ]);
-
-            doLoad("header", ["/components/header.html"]);
-            doLoad(".main", [
-                "/components/web-stories.html", 
-                "/components/features.html", 
-            ]);
-        </script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Omelete Clone</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
