@@ -1,10 +1,11 @@
 import { Header } from "./components/Header";
+import { Stories } from "./components/Stories";
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Stories/> */}
+      <Stories />
       {/* <Highlights/> */}
       {/* <LastCritics/> */}
       {/* <News/> */}
